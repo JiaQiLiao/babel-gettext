@@ -48,8 +48,7 @@ module.exports = function() {
         }
 
         if (Object.keys(data).length == 0) return
-        let tmp = JSON.stringify(data).replace(/","/g, '",\n"')
-        tmp = `/** ${path.relative(process.cwd(), currentFilePath)} **/\n${tmp}`
+        let tmp = JSON.stringify(data).replace(/","/g, '",\n"')        
 
         fs.writeFileSync(fileName, tmp)
       }
