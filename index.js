@@ -48,7 +48,7 @@ module.exports = function() {
         }
 
         if (Object.keys(data).length == 0) return
-        let tmp = JSON.stringify(data).replace(/","/g, '",\n"')        
+        let tmp = JSON.stringify(data, null, 4) 
 
         fs.writeFileSync(fileName, tmp)
       }
