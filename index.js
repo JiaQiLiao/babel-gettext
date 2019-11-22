@@ -38,6 +38,8 @@ module.exports = function() {
           functionNames.includes(callee.property.name)) {
 
         var args = nodePath.get('arguments');
+        var type = args[0].node.type
+        if(type === 'Identifier' || type === 'MemberExpression') return
         var arg = args[0].evaluate();
         var value = arg.value;
 

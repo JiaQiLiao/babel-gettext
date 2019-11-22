@@ -1,6 +1,6 @@
 {
-  "name": "babel-gettext",
-  "version": "0.0.3",
+  "name": "@yzj/babel-plugin-gettext",
+  "version": "0.0.2",
   "description": "babel-gettext to json",
   "main": "index.js",
   "scripts": {
